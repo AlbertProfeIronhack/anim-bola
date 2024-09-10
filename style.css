@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(171, 188, 143, 0.39);
+}
+
+#bolita{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+    animation: bolitaHaciaDerecha 5s infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+    /* animación en PAUSA para poder arrancarla con un botón */
+}  
+
+
+hr{
+    margin-top: -8px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.564);
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes bolitaHaciaDerecha{
+    from{ transform: rotate(0deg); left: 10px}
+    to{transform: rotate(360deg); left: 800px}
+}
